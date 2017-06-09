@@ -26,7 +26,7 @@ function o.cfgvalue(...)
 	return Value.cfgvalue(...) or translate("None")
 end
 
-o = s:option(DummyValue, "server", translate("Server Address"))
+o = s:option(DynamicList, "server", translate("Server Address"))
 function o.cfgvalue(...)
 	return Value.cfgvalue(...) or "?"
 end

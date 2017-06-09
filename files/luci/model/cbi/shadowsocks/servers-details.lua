@@ -50,9 +50,7 @@ if support_fast_open() then
 	o.rmempty = false
 end
 
-o = s:option(Value, "server", translate("Server Address"))
-o.datatype = "ipaddr"
-o.rmempty = false
+o = s:option(DynamicList, "server", translate("Server Address"))
 
 o = s:option(Value, "server_port", translate("Server Port"))
 o.datatype = "port"
